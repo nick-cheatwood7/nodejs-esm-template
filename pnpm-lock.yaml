@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fastify/one-line-logger': ^1.1.1
+  '@fastify/rate-limit': ^7.6.0
   '@tsconfig/node18-strictest-esm': ^1.0.1
   '@types/node': ^18.11.18
   esbuild: ^0.16.16
@@ -11,6 +12,7 @@ specifiers:
 
 dependencies:
   '@fastify/one-line-logger': 1.1.1
+  '@fastify/rate-limit': 7.6.0
   fastify: 4.11.0
 
 devDependencies:
@@ -285,6 +287,14 @@ packages:
     resolution: {integrity: sha512-OlhQxPU8ZwdU5xvI7+5q4nBsD9xGnJ6mjEZPg0xCd5ZqhVv/2rnSj3QcjoDm+grNyjgFbamfL2IS3jRHAv0/dQ==}
     dependencies:
       pino-pretty: 9.1.1
+    dev: false
+
+  /@fastify/rate-limit/7.6.0:
+    resolution: {integrity: sha512-XOS7J17dp7d45hMUzBFGJC6B/8znr4/wicvl4gxnbI/upf2ShoOasvLl5J10BFQW/ccqdNURXISb7eHf4Ac4nQ==}
+    dependencies:
+      fastify-plugin: 4.4.0
+      ms: 2.1.3
+      tiny-lru: 10.0.1
     dev: false
 
   /@tsconfig/node18-strictest-esm/1.0.1:
@@ -696,6 +706,10 @@ packages:
     resolution: {integrity: sha512-cIusKBIt/R/oI6z/1nyfe2FvGKVTohVRfvkOhvx0nCEW+xf5NoCXjAHcWp93uOUBchzYcsvPlrapAdX1uW+YGg==}
     dev: false
 
+  /fastify-plugin/4.4.0:
+    resolution: {integrity: sha512-ovwFQG2qNy3jcCROiWpr94Hs0le+c7N/3t7m9aVwbFhkxcR/esp2xu25dP8e617HpQdmeDv+gFX4zagdUhDByw==}
+    dev: false
+
   /fastify/4.11.0:
     resolution: {integrity: sha512-JteZ8pjEqd+6n+azQnQfSJV8MUMxAmxbvC2Dx/Mybj039Lf/u3kda9Kq84uy/huCpqCzZoyHIZS5JFGF3wLztw==}
     dependencies:
@@ -829,6 +843,10 @@ packages:
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: false
+
+  /ms/2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: false
 
   /on-exit-leak-free/2.1.0:
