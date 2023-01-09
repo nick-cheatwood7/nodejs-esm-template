@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-esm-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch ./src/index.ts",
+    "build": "tsx ./scripts/build.ts",
+    "start": "node ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node18-strictest-esm": "^1.0.1",
+    "@types/node": "^18.11.18",
+    "esbuild": "^0.16.16",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@fastify/one-line-logger": "^1.1.1",
+    "fastify": "^4.11.0"
+  }
+}
