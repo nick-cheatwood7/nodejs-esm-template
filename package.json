@@ -6,9 +6,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx watch ./src/index.ts",
-    "build": "tsx ./scripts/build.ts",
-    "start": "node ./dist/main.js"
+    "dev": "pnpm with-env tsx watch ./src/index.ts",
+    "build": "pnpm with-env tsx ./scripts/build.ts",
+    "start": "pnpm with-env node ./dist/index.js",
+    "with-env": "dotenv -e ./env --"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@tsconfig/node18-strictest-esm": "^1.0.1",
     "@types/node": "^18.11.18",
+    "dotenv-cli": "^7.1.0",
     "esbuild": "^0.16.16",
     "tsx": "^3.12.1",
     "typescript": "^4.9.4"
@@ -23,6 +25,10 @@
   "dependencies": {
     "@fastify/one-line-logger": "^1.1.1",
     "@fastify/rate-limit": "^7.6.0",
-    "fastify": "^4.11.0"
+    "@fastify/swagger": "^8.3.1",
+    "@fastify/swagger-ui": "^1.5.0",
+    "fastify": "^4.11.0",
+    "fastify-zod": "^1.2.0",
+    "zod": "^3.21.4"
   }
 }
